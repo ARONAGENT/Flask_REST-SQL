@@ -10,7 +10,7 @@ def addcars():
     bal=float(request.form.get('balance'))
     dic={}
     try:
-        con=pymysql.connect(host="rohan-mysql-db-rohandbconnections.c.aivencloud.com",user="avnadmin",password="AVNS_jLvqn4KtNKeQMfTv6yn",port=19414,database="rohandb")
+        con=pymysql.connect(host="rohan-mysql-db-rohandbconnections.c.aivencloud.com",user="avnadmin",password="1111",port=19414,database="rohandb")
         curs=con.cursor()
         curs.execute("update accounts set balance=balance-%.2f where accno=%d" %(bal,fno))
         con.commit()
