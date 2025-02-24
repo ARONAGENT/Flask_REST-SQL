@@ -8,7 +8,7 @@ api=Api(app)
 
 class getByAcctype(Resource):
     def get(self,acctype):
-        con=pymysql.connect(host="rohan-mysql-db-rohandbconnections.c.aivencloud.com",user="avnadmin",password="AVNS_jLvqn4KtNKeQMfTv6yn",port=19414,database="rohandb")
+        con=pymysql.connect(host="rohan-mysql-db-rohandbconnections.c.aivencloud.com",user="avnadmin",password="",port=19414,database="rohandb")
         curs=con.cursor()
         curs.execute("select * from accounts where acctype='%s'" %acctype)
         data=curs.fetchall()
