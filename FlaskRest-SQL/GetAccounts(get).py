@@ -7,7 +7,7 @@ api=Api(app)
 
 class allaccounts(Resource):
     def get(self):
-        con=pymysql.connect(host="rohan-mysql-db-rohandbconnections.c.aivencloud.com",user="avnadmin",password="AVNS_jLvqn4KtNKeQMfTv6yn",port=19414,database="rohandb")
+        con=pymysql.connect(host="rohan-mysql-db-rohandbconnections.c.aivencloud.com",user="avnadmin",password="1111",port=19414,database="rohandb")
         curs=con.cursor()
         curs.execute('select * from accounts')
         data=curs.fetchall()
